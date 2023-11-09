@@ -3,9 +3,11 @@ import Hero from '@/app/components/widgets/Hero'
 
 export default function Home() {
   return (
-    <div>
+    <main>
+      {/* Hero Section */}
       <Hero />
-    </div>
+      {/* Core Track Section */}
+    </main>
   )
 }
 
