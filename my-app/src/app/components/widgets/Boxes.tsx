@@ -1,5 +1,5 @@
 
-const CoreTrack = [
+const CoreTrack: { header: string, description: string, number: number }[] = [
     {
         header: 'Quarter I',
         description: 'CS-101: Object-Oriented Programming using Typescript',
@@ -21,12 +21,12 @@ const Boxes = () => {
     return (
         <div className="flex my-20 space-x-4">
             {
-                CoreTrack.map((item,i) => {
+                CoreTrack.map((item, i) => {
                     return (
                         <div className=" border rounded-md w-4/12 px-8 py-12 relative ">
                             <h4 className=" font-bold text-lg">{item.header}</h4>
                             <p className="mt-2 text-slate-600">{item.description}</p>
-                            <span className=" absolute top-4 right-10 text-9xl font-bold text-gray-200 -z-10">{i+1}</span>
+                            <span className=" absolute top-4 right-10 text-9xl font-bold text-gray-200 -z-10">{i + 1}</span>
                         </div>
                     )
                 })
