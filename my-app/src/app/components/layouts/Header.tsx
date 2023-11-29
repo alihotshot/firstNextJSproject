@@ -6,7 +6,7 @@ import Wrapper from "@/app/components/shared/Wrapper"
 const Header = () => {
     return (
         <Wrapper>
-            <header className="flex justify-between items-center my-4 sticky">
+            <header className="flex justify-between items-center my-4">
                 <div>
                     <Link href={"/"}>
                         <Image src={Logo} alt={"Tile Mountain"} />
